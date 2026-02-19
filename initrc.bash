@@ -29,3 +29,5 @@ for shellrc in "$shellrc_dir/"*; do
 	
 	# echo $shellrc `basename $shellrc`
 done
+
+source "$shellrc_dir"/.bash_profile
