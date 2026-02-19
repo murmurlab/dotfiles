@@ -1,7 +1,10 @@
 #!/bin/bash
 
 HOME_DIR=`eval echo ~`
-shellrc_dir='./shellrc'
+
+prefix="$HOME_DIR/.config/dotfiles"
+
+shellrc_dir="$prefix"/'./shellrc'
 
 : '
 for rcfile in "$1/rcfiles/*"; do
@@ -24,10 +27,10 @@ replace() {
 shopt -s dotglob
 
 shellrc=$shellrc_dir/*
-for shellrc in "$shellrc_dir/"*; do
-	ls -l ~/"`basename $shellrc`"
+# for shellrc in "$shellrc_dir/"*; do
+# 	ls -l ~/"`basename $shellrc`"
 	
-	# echo $shellrc `basename $shellrc`
-done
+# 	# echo $shellrc `basename $shellrc`
+# done
 
-source "$shellrc_dir"/.bash_profile
+source "$shellrc_dir"/".bash_profile"
