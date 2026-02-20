@@ -43,22 +43,14 @@ export PATH=$PATH:~/goinfre/homebrew/bin
 alias murmurkb='. ~/.config/xkb/apply-murmurkb.sh'
 export PATH=$PATH:~/.local/bin/
 alias c='clear'
-PATH=$PATH:/Users/ahbasara/go/bin
-PATH=$PATH:/Users/ahbasara/.local/bin
-export HOMEBREW_LOGS=/Users/ahbasara/brew-logs
-export HOME=/Users/ahbasara
-export USER=ahbasara
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 export PATH=$PATH:~/goinfre/homebrew/bin
 export PATH=$PATH:~/Downloads/platform-tools
 export JAVA_HOME=~/Downloads/jre1.8.0_331.jre/Contents/Home/
-alias vg=VALGRIND_LIB=/Users/ahbasara/.local/valgrind/libexec/valgrind/\ /Users/ahbasara/.local/bin/vg
 
 export PATH=$PATH:~/.local/bin/
-
-export PATH=$PATH:/Users/ahbasara/goinfre/nodejs/bin
 
 
 matrix()
