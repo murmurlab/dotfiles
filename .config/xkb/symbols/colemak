@@ -1,0 +1,16 @@
+default partial alphanumeric_keys
+xkb_symbols "basic" {
+    include "us(colemak)";
+};
+
+partial alphanumeric_keys
+xkb_symbols "arrows" {
+    include "us(colemak)";
+    
+    // Super_R (sağ Windows tuşu) + u,i,o,n = arrow keys
+    // Format: [ level1, level2, level3, level4 ]
+    key <AD07> { [ u, U, Up, Up ] };           // u -> Super_R + u = Up arrow
+    key <AD08> { [ i, I, Right, Right ] };     // i -> Super_R + i = Right arrow  
+    key <AD09> { [ o, O, Down, Down ] };       // o -> Super_R + o = Down arrow
+    key <AC06> { [ n, N, Left, Left ] };       // n -> Super_R + n = Left arrow
+};

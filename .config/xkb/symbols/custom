@@ -1,0 +1,34 @@
+// ~/.config/xkb/symbols/murmur
+// default partial alphanumeric_keys
+// xkb_symbols "basic" {
+//     include "pc+test.xkb(arrows)+inet(evdev)+level3(rwin_switch)+ctrl(swap_lwin_lctl)"
+// };
+
+xkb_keymap {
+        xkb_keycodes  { include "evdev+aliases(qwerty)" };
+        xkb_types     { include "complete"      };
+        xkb_compat    { include "complete"      };
+        xkb_symbols   { include "pc+test.xkb(arrows)+inet(evdev)+level3(rwin_switch)+ctrl(swap_lwin_lctl)"      };
+        xkb_geometry  { include "pc(pc105)"     };
+};
+
+
+// default partial alphanumeric_keys
+// xkb_symbols "arrows" {
+//     include "us(colemak)"
+//     name[Group1]= "Murmur kb";
+
+// 	key <AC07> { [ n, N, Left,  Left  ] };
+//     key <AC08> { [ e, E, Down,  Down  ] }; 
+//     key <AC09> { [ i, I, Right, Right ] }; 
+//     key <AD08> { [ u, U, Up,    Up    ] }; 
+
+//     key <AC02> { [ r, R, Home,  Home  ] }; 
+//     key <AC03> { [ s, S, Next,  Next  ] }; 
+//     key <AC04> { [ t, T, End,   End   ] }; 
+//     key <AD03> { [ f, F, Prior, Prior ] };
+
+//     key <CAPS> { [ BackSpace, BackSpace, BackSpace, BackSpace ] };
+// 	key <BKSP> { [ Caps_Lock, Caps_Lock, Caps_Lock, Caps_Lock ] };
+// 	// key <I169> { [Delete,    Delete,       Delete,        Delete] };
+// };

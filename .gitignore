@@ -1,0 +1,16 @@
+*
+!.config/
+
+!.config/xkb/
+!.config/xkb/**
+!.config/xkb/**
+
+!.bash_profile
+!.bashrc
+!.bash_login
+!.zprofile
+!.zshrc
+!.profile
+!.xprofile
+!.xinitrc
+!.gitignore

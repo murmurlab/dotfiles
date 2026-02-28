@@ -1,0 +1,8 @@
+Senin durumun için (GNOME + GDM + X11):
+
+Yöntem	Çalışır mı?	Neden
+~/.xinitrc	❌	Sadece startx ile X başlatınca çalışır. GDM bunu okumaz.
+~/.xprofile	⚠️	GDM tarafından okunur ama GNOME başlamadan önce çalışır. Sonra Mutter kendi keymap'ini uygular ve senin xkbcomp değişikliklerini ezar.
+~/.config/autostart/	✅	GNOME oturumu tamamen yüklendikten sonra çalışır. Mutter keymap'ini zaten uygulamış olur, senin xkbcomp overlay'i üstüne biner.
+
+bunu lightdm icin sor cunku gdm degiliz.

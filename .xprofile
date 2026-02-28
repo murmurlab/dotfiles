@@ -1,0 +1,7 @@
+# Murmur Colemak Arrows - XKB overlay
+echo "[$(date)] xprofile ran on DISPLAY=$DISPLAY" >> "$HOME/.config/xkb/xprofile.log"
+# setxkbmap -I$HOME/.xkb -rules evdev -layout test.xkb -variant arrows -option lv3:rwin_switch -print | xkbcomp -I$HOME/.xkb - $DISPLAY 
+# xkbcomp  -I$HOME/.xkb $HOME/.xkb/murmurkb.xkb $DISPLAY
+#setxkbmap -layout test -variant arrows -option lv3:rwin_switch,ctrl:swap_lwin_lctl -print | xkbcomp -I"$HOME/.config/xkb" - $DISPLAY 2>/dev/null
+xkbcomp -I"$HOME/.config/xkb" "$HOME/.config/xkb/murmurkb.xkb" "$DISPLAY" 2>/dev/null
+echo "[$(date)] xkbcomp exit code: $?" >> "$HOME/.config/xkb/xprofile.log"

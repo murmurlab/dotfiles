@@ -1,0 +1,8 @@
+! option		=	symbols
+  lv3:rwin_switch	=	+level3(rwin_switch)
+! variant		=	symbols
+  arrows		=	test(arrows)
+! layout		=	symbols
+  test		=	test
+
+! include %S/evdev

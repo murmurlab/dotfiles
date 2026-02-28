@@ -1,0 +1,24 @@
+default partial alphanumeric_keys
+xkb_symbols "basic" {
+    include "us(colemak)"
+    name[Group1]= "Murmur Colemak";
+};
+
+partial alphanumeric_keys
+xkb_symbols "arrows" {
+    include "us(colemak)"
+    name[Group1]= "Murmur Colemak Arrows";
+
+    key <AC07> { [ n, N, Left,  Left  ] };
+    key <AC08> { [ e, E, Down,  Down  ] };
+    key <AC09> { [ i, I, Right, Right ] };
+    key <AD08> { [ u, U, Up,    Up    ] };
+
+    key <AC02> { [ r, R, Home,  Home  ] };
+    key <AC03> { [ s, S, Next,  Next  ] };
+    key <AC04> { [ t, T, End,   End   ] };
+    key <AD03> { [ f, F, Prior, Prior ] };
+
+    key <CAPS> { [ BackSpace, BackSpace, BackSpace, BackSpace ] };
+    key <BKSP> { [ Caps_Lock, Caps_Lock, Caps_Lock, Caps_Lock ] };
+};

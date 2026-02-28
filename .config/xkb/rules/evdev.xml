@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xkbConfigRegistry SYSTEM "xkb.dtd">
+<xkbConfigRegistry version="1.1">
+  <layoutList>
+    <layout>
+      <configItem>
+        <name>test</name>
+        <shortDescription>tst</shortDescription>
+        <description>Murmur Custom Layout (test)</description>
+        <languageList>
+          <iso639Id>eng</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>arrows</name>
+            <description>Murmur Arrows (Colemak-based)</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+  </layoutList>
+
+  <optionList>
+    <group>
+      <configItem>
+        <name>lv3</name>
+        <description>Key to choose the 3rd level</description>
+      </configItem>
+      <option>
+        <configItem>
+          <name>lv3:rwin_switch</name>
+          <description>Right Win</description>
+        </configItem>
+      </option>
+    </group>
+  </optionList>
+</xkbConfigRegistry>
