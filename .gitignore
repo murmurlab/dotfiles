@@ -3,7 +3,8 @@
 
 !.config/xkb/
 !.config/xkb/**
-!.config/xkb/**
+.config/xkb/autostart.log
+.config/xkb/xprofile.log
 
 !.bash_profile
 !.bashrc
