@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Murmur Colemak Arrows
+Comment=Apply custom XKB key mappings
+Exec=/bin/bash -c "source $HOME/.xprofile"
+Hidden=false
+NoDisplay=true
+X-GNOME-Autostart-enabled=true
+X-GNOME-Autostart-Phase=Applications

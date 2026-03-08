@@ -6,6 +6,10 @@
 .config/xkb/autostart.log
 .config/xkb/xprofile.log
 
+!.config/autostart/
+!.config/autostart/**
+./.config/autostart/murmurkb.desktop
+
 !.bash_profile
 !.bashrc
 !.bash_login
