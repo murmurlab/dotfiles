@@ -46,6 +46,9 @@ matrix()
 norme(){
 	norminette -R CheckForbiddenSourceHeader
 }
+xwpbg(){
+	xwp3 /home/ahmbasar/Pictures/Wallpapers/anime.jpg
+}
 cwww(){
 	cc -Wall -Wextra -Werror $1
 }
