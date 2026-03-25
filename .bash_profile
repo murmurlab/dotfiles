@@ -3,6 +3,9 @@ source /etc/skel/.bashrc
 
 # exports ======================================================================
 #export XDG_DATA_HOME="/home/ahmbasar/sgoinfre"
+export FLATPAK_USER_DIR="/sgoinfre/ahmbasar/flatpak"
+export XDG_DATA_DIRS="$FLATPAK_USER_DIR/exports/share:$XDG_DATA_DIRS"
+# export XDG_DATA_HOME="$FLATPAK_USER_DIR"
 
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path bash)"
 
