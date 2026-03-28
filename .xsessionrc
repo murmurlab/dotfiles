@@ -1,0 +1,7 @@
+#!/bin/sh
+# X session startup hook
+echo "[$(date)] .xsessionrc ran DISPLAY=${DISPLAY:-<empty>}" >> "$HOME/.config/xkb/xprofile.log"
+
+if [ -f "$HOME/.xprofile" ]; then
+    . "$HOME/.xprofile"
+fi

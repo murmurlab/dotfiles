@@ -1,16 +1,35 @@
 *
+
 !.config/
 
 !.config/xkb/
 !.config/xkb/**
 .config/xkb/autostart.log
 .config/xkb/xprofile.log
+.config/xkb/xprofile.err.log
 
 !.config/autostart/
 !.config/autostart/**
-./.config/autostart/murmurkb.desktop
+
+!.config/environment.d/
+!.config/environment.d/**
+
+!.config/user-dirs.dirs
+
+!.config/systemd/
+!.config/systemd/**
+.config/systemd/**/*.wants
+
+!.config/pulse/
+!.config/pulse/2default.pa
+!.config/pulse/client.conf
+
+!.local/
+!.local/etc/test
+!.local/share/applications/test
 
 !.bash_profile
+!.bash_aliases
 !.bashrc
 !.bash_login
 !.zprofile
@@ -19,3 +38,8 @@
 !.xprofile
 !.xinitrc
 !.gitignore
+!.dmrc
+!.gitconfig
+!.xsessionrc
+
+

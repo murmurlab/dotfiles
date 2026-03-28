@@ -1,10 +1,21 @@
 # /var/lib/flatpak/app/com.visualstudio.code/x86_64/stable/d99916cd683ba4adb6fab91e80643694b246309e91bc920b487ac3f59d9db069/files/extra/vscode/code
-source /etc/skel/.bashrc
+
+LOG_FILE="$HOME"/log_init.log
+echo "[LOG/bash_profile]: test $(date)" >> "$LOG_FILE"
+
+# source /etc/skel/.bashrc
+if [ -f "$HOME/.bashrc" ]; then
+    . ~/.bashrc
+fi
+if [ -f "$HOME/.env" ]; then
+    . "$HOME/.env"
+fi
 
 # exports ======================================================================
 #export XDG_DATA_HOME="/home/ahmbasar/sgoinfre"
 export FLATPAK_USER_DIR="/sgoinfre/ahmbasar/flatpak"
 export XDG_DATA_DIRS="$FLATPAK_USER_DIR/exports/share:$XDG_DATA_DIRS"
+
 # export XDG_DATA_HOME="$FLATPAK_USER_DIR"
 
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path bash)"

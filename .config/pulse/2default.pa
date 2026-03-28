@@ -1,0 +1,8 @@
+.include /etc/pulse/default.pa
+
+load-module  module-tunnel-sink  sink_name=beta  server=tcp:10.11.25.2:4713
+# load-module  module-native-protocol-tcp  auth-ip-acl=127.0.0.1;10.11.25.2/24
+
+# load-module module-native-protocol-tcp listen=0.0.0.0 auth-anonymous=0 auth-ip-acl=10.11.25.2/24
+# load-module module-simple-protocol-tcp listen=0.0.0.0 auth-anonymous=1
+# set-default-sink 0
