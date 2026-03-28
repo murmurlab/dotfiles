@@ -4,6 +4,7 @@
 
 !.config/xkb/
 !.config/xkb/**
+.config/xkb/out
 .config/xkb/autostart.log
 .config/xkb/xprofile.log
 .config/xkb/xprofile.err.log
