@@ -1,3 +1,4 @@
 [user]
-	email = %(env:GIT_AUTHOR_EMAIL)
 	name = murmurlab
+[include]
+    path = "/home/ahmbasar/.gitconfig_local"
